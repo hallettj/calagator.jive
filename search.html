@@ -5,24 +5,25 @@
     <title>Calagator Search</title>
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" />
-    <script type="text/javascript" charset="utf-8" src="javascripts/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="javascripts/bootstrap-typeahead.js"></script>
-    <script type="text/javascript" charset="utf-8" src="javascripts/common.js"></script>
-    <script type="text/javascript" charset="utf-8" src="javascripts/search.js"></script>
 </head>
 <body>
 
 <div id="main">
 
     <div class="instruction">
-        Enter a company name to search the CrunchBase directory.
+        Enter an event name, tag, or keywords to search the list of
+        upcoming events on Calagator.
     </div>
 
     <div class="wrap">
-        <input type="text" placeholder="Search CrunchBase" id="searchinput" data-provide="typeahead">
-        <div id="buttons">
-            <button id="ok" class="btn primary disabled" type="submit">Insert</button>
-        </div>
+        <form id="search">
+            <input type="search" placeholder="Search Calagator" id="searchinput"
+                   data-provide="typeahead"
+                   data-source="[&quot;foo&quot;, &quot;bar&quot;, &quot;nao&quot;]" />
+            <div id="buttons">
+                <button id="ok" class="btn primary disabled" type="submit">Insert</button>
+            </div>
+        </form>
     </div>
     <div id="results">
         <div id="loading-container">
@@ -57,6 +58,11 @@
         </li>
     </ul>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="javascripts/bootstrap-typeahead.js"></script>
+<script src="javascripts/common.js"></script>
+<script src="javascripts/search.js"></script>
 
 </body>
 </html>

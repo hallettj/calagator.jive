@@ -1,0 +1,109 @@
+#main, #view {
+    padding: 25px 25px 25px 25px;
+    top: 100px;
+}
+
+#main {
+    width: 400px;
+}
+
+.instruction {
+    width: 350px;
+    margin-bottom: 15px;
+}
+#icon {
+    padding: 0px 15px 10px 0px;
+}
+
+#main .wrap * {
+    float: left;
+}
+#main .wrap {
+    height: 38px;
+    margin-bottom: 10px;
+}
+
+#buttons {
+    margin-left: 10px;
+    float:right;
+    padding: 0px 0px 20px 0px;
+}
+
+.btn {
+    min-width: 55px;
+}
+
+.frame {
+    padding: 5px; border: 1px solid #aaa;
+}
+
+.align-right {
+    float:right; margin: 0 0 15px 15px;
+}
+
+.template {
+    display: none;
+}
+
+#loading {
+    margin-top: -15px;
+    display: none;
+}
+
+.display-container {
+    float: left;
+    margin-left: 5px;
+    max-height: 450px;
+    padding: 5px;
+}
+
+#detail-container {
+    width: 500px;
+    overflow-y: auto;
+}
+
+#sidebar-container {
+    width: 218px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.office-description-label {
+    font-weight: bold;
+}
+
+.person-name {
+    font-weight: bold;
+    display: block;
+}
+
+#stock-value {
+    font-weight: bold;
+}
+
+.communitymembers-notice {
+    border: 1px dashed;
+    padding: 8px;
+    margin-bottom:2px;
+    margin-top:2px;
+    background-color: #edfffc;
+}
+
+.communitymember-avatar {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 3px;
+    float: left;
+}
+
+.overview-label {
+    padding-top: 10px;
+    clear: left;
+}
+#overview-container {
+    clear: left;
+}
