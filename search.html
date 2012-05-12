@@ -5,6 +5,20 @@
     <title>Calagator Search</title>
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" />
+
+    <!-- grab stylesheets from Calagator -->
+    <link href="http://calagator.org/themes/default/stylesheets/reset.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="http://calagator.org/stylesheets/common.css?1307456609" media="all" rel="stylesheet" type="text/css" />
+    <link href="http://calagator.org/stylesheets/formtastic.css?1319245558" media="all" rel="stylesheet" type="text/css" />
+    <link href="http://calagator.org/themes/default/stylesheets/typography.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="http://calagator.org/themes/default/stylesheets/forms.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="http://calagator.org/themes/default/stylesheets/layout.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="http://calagator.org/themes/default/stylesheets/jquery-ui/jquery-ui.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="http://calagator.org/themes/default/stylesheets/changes.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="http://calagator.org/themes/default/stylesheets/mobile.css" media="only screen and (max-device-width: 960px)" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
+      <link href="http://calagator.org/themes/default/stylesheets/ie.css" media="all" rel="stylesheet" type="text/css" />
+    <![endif]-->
 </head>
 <body>
 
@@ -25,6 +39,7 @@
             </div>
         </form>
     </div>
+
     <div id="results">
         <div id="loading-container">
             <img src="images/jive-image-loading.gif" id="loading"/>
@@ -35,33 +50,18 @@
 
 </div>
 
-<div class="crunchbase-summary-template template">
-    <img src="" class="company_image">
-    <ul>
-        <li data-id="website">
-            <a href="#" class="fld_value" target="_blank"></a>
-        </li>
-        <li data-id="crunchbase">
-            <span class="fld_label">CrunchBase:</span> <a href="#" class="fld_value" target="_blank"></a>
-        </li>
-        <li data-id="category">
-            <span class="fld_label">Category:</span> <span class="fld_value"></span>
-        </li>
-        <li data-id="employees">
-            <span class="fld_label">Employees:</span> <span class="fld_value"></span>
-        </li>
-        <li data-id="founded">
-            <span class="fld_label">Founded:</span> <span class="fld_value"></span>
-        </li>
-        <li data-id="description">
-            <span class="fld_label">Description:</span> <span class="fld_value"></span>
-        </li>
-    </ul>
-</div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="javascripts/bootstrap-typeahead.js"></script>
-<script src="javascripts/common.js"></script>
+<script src="javascripts/jiverscripts/src/compat/array.js"></script>
+<script src="javascripts/jiverscripts/src/compat/object.js"></script>
+<script src="javascripts/jiverscripts/src/compat/function.js"></script>
+<script src="javascripts/jiverscripts/src/conc/observable.js"></script>
+<script src="javascripts/jiverscripts/src/oo/abstract.js"></script>
+<script src="javascripts/jiverscripts/src/oo/class.js"></script>
+<script src="javascripts/typeahead_input.js"></script>
+<script src="javascripts/suggestions.js"></script>
+<script src="javascripts/dust-core-0.4.0.js"></script>
+<script src="javascripts/dust-date-helpers"></script>
+<script src="javascripts/compiled-templates.js"></script>
 <script src="javascripts/search.js"></script>
 
 </body>

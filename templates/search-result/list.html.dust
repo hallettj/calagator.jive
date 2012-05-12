@@ -1,0 +1,18 @@
+<table class="event_table">
+    <tbody>
+        {#currentEvents}
+            {>"search-result/{type}"/}
+        {/currentEvents}
+    </tbody>
+</table>
+
+{?pastEvents}
+<h2>past events</h2>
+<table class="event_table">
+    <tbody>
+        {#pastEvents}
+          {>"search-result/{type}"/}
+        {/pastEvents}
+    </tbody>
+</table>
+{/pastEvents}

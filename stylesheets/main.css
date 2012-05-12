@@ -107,3 +107,22 @@ ul {
 #overview-container {
     clear: left;
 }
+
+.event_table .vevent:hover,
+.event_table .vevent.selected {
+    color:#fff;
+    background: #75B7E3; /* old browsers */
+    background: -moz-linear-gradient(top, #75B7E3 0%, #5498D6 50%, #408BD0 51%, #387AC8 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#75B7E3), color-stop(50%,#5498D6), color-stop(51%,#408BD0), color-stop(100%,#387AC8)); /* webkit */
+    background: -o-linear-gradient(top, #75B7E3 0%,#5498D6 50%,#408BD0 51%,#387AC8 100%); /* opera */
+    text-decoration: none;
+    box-shadow: inset 0 1px 0 #a4d5ee, 0 1px 3px rgba(0,0,0,.2);
+    border-top: 1px solid #3169aa;
+    border-bottom: 1px solid #3169aa;
+    text-shadow:0 1px 0 rgba(0,0,0,.5);
+    }
+.event_table .vevent:hover .font-color-meta,
+.event_table .vevent.selected .font-color-meta {
+    color: #c3daf7;
+    text-shadow: none;
+    }

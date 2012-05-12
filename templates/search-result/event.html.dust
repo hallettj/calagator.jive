@@ -1,0 +1,17 @@
+<tr class="vevent">
+    <td class="date" rowspan="1">
+        <div class="day_of_week {@toLowerCase}{@dayOfWeek:start_time/}{/toLowerCase}">
+            {@dayOfWeek:start_time/}
+        </div>
+        {@shortDate:start_time/}
+    </td>
+    <td class="event_summary">
+        <a class="summary" href="{self|u}" name="event-{id}" id="event-{id}">{title}</a><br>
+        <abbr class="dtstart" title="{start_time}">{@hour:start_time/}</abbr>–<abbr class="dtend" title="{end_time}">{@hour:end_time/}{@meridian:start_time/}</abbr> 
+        <a class="location" href="{venue.self|u}">{venue.title}</a>
+        <div class="description">
+            {@paragraph}{description}{/paragraph}
+        </div>
+        <a href="{url|u}" class="url" rel="nofollow">Website</a>
+    </td>
+</tr>
